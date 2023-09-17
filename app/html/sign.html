@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/sign.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay" id="customAlertOverlay">
+        <div class="custom-alert" id="customAlert">
+            <div class="information">
+                <h1 id="customAlertTitle">Critical Alert!</h1>
+                <p id="customAlertMessage">An error has occured!</p>
+            </div>
+            <div id="customAlertButton" class="button-container">
+                <a>OK</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <header>
+            <div>
+                <img id="settings" src="../img/settings.png">
+                <img onclick="electron.closeApp()" id="close" src="../img/close.png">
+            </div>
+        </header>
+        <img src="../img/logotype.png" class="logotype">
+        <p style="color: #F04444;">HELL<a style="color: white;">GRAM</a></p>
+        <form>
+            <div class="input-wrapper" id="phone-input-wrapper">
+                <input id="phone-input" type="text" placeholder="phone number">
+                <div class="icon-phone"></div>
+            </div>
+            <div class="input-wrapper hidden" id="code-input-wrapper">
+                <input id="code-input" type="text" placeholder="code">
+                <div class="icon-code"></div>
+            </div>
+            <div class="button">
+                <button id="sign-in-button">SIGN IN</button>
+                <p id="phone-number-text">ㅤ</p>
+            </div>
+        </form>
+    </main>
+    <script src="../js/sign.js"></script>
+</body>
+</html>

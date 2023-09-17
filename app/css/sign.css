@@ -1,0 +1,250 @@
+html {
+    border-radius: 30px;
+}
+
+body {
+    margin: 0;
+    background-color: #120C0C;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 70px;
+}
+
+input::placeholder {
+    color: #9F9F9F;
+}
+
+input:hover,
+input:focus {
+    border: 3px solid #F04444;
+    box-shadow: 0 0 0 5px rgb(240 68 68 / 30%);
+}
+
+.input-wrapper {
+  position: relative;
+  width: 17em;
+}
+
+input {
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+    outline: none;
+    background-color: #231818;
+    color: white;
+    border-radius: 0.5em;
+    padding-left: 4em;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.icon-phone {
+    position: absolute;
+    left: 0.8em;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url('../img/number.png');
+    background-size: 1.1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: default;
+    pointer-events: all;
+    user-select: none;
+    z-index: 2;
+}
+
+.icon-code {
+    position: absolute;
+    left: 0.8em;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-image: url('../img/code.png');
+    background-size: 1.1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: default;
+    pointer-events: all;
+    user-select: none;
+    z-index: 2;
+}
+
+.button {
+    width: 17em;
+    position: relative;
+}
+
+button {
+    background-color: #F04444;
+    width: 100%;
+    height: 3em;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d73c3c;
+}
+
+.logotype {
+    position: relative;
+    width: 150px;
+    bottom: 1em;
+}
+
+.input-wrapper {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+main p,
+main a {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    font-size: 10px;
+    color: #9F9F9F;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12, 3, 3, 0.78);
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    z-index: 999;
+}
+
+.overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.overlay.hidden {
+    opacity: 0;
+}
+
+.custom-alert {
+    width: 320px;
+    height: 130px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #231818;
+    z-index: 2;
+    border: 2px solid #F04444;
+}
+
+.information h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #F04444;
+}
+
+.information p {
+    font-weight: 500;
+    margin-top: 5px;
+    color: white;
+}
+
+.information {
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #F04444;
+}
+
+.button-container {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #F04444;
+    transition: all 0.2s;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-container:active {
+    background: #301010;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#phone-number-text {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #0A0606;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header div img {
+    width: 20px;
+    cursor: pointer;
+}
+
+header div {
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+    -webkit-app-region: drag;
+}
