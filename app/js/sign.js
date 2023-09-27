@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   signInButton.addEventListener("click", function(e) {
     e.preventDefault();
-    if (phoneinput.value === "") return showAlert('Critical Alert!', 'An error has occured!');;
+    if (phoneinput.value === "") return showAlert('Input error!', 'Fill in the input field');;
     phoneInputWrapper.style.opacity = "0";
     setTimeout(() => {
       phoneInputWrapper.style.display = "none";
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
       overlay.style.display = "none";
     }, 500);
   });
-  
+
   function showAlert(customTitle, customMessage) {
     title.textContent = customTitle;
     message.textContent = customMessage;

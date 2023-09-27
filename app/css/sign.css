@@ -11,6 +11,7 @@ body {
 
 * {
     font-family: "Montserrat", sans-serif;
+    user-select: none;
 }
 
 main {
@@ -240,6 +241,7 @@ header {
 header div img {
     width: 20px;
     cursor: pointer;
+    -webkit-app-region: no-drag;
 }
 
 header div {
